@@ -1,4 +1,4 @@
-package me.kwon;
+package me.kwon.interfaceAndLambda;
 
 @FunctionalInterface
 public interface ReturnInt {

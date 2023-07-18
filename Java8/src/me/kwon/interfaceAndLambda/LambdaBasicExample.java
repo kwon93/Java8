@@ -1,6 +1,6 @@
-package me.kwon;
+package me.kwon.interfaceAndLambda;
 
-public class MainExample {
+public class LambdaBasicExample {
     public static void main(String[] args) {
 
         RunSomthing runSomthing = () -> System.out.println("뭐라도 좀 해라"); // 람다식
@@ -23,5 +23,9 @@ public class MainExample {
         //pure function은 함수밖의 있는 값을 참조하거나 변경하려하면 안됨. 함수 내부의 파리미터 혹은 함수내부에 가지고있는 값만을 이용
         int returnIntMethod = returnInt.returnIntMethod(10);
         System.out.println(returnIntMethod);
+
+
+
+
     }
 }

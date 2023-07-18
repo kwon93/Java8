@@ -1,4 +1,4 @@
-package me.kwon;
+package me.kwon.interfaceAndLambda;
 
 @FunctionalInterface //이 애노테이션으로 함수형 인터페이스 검증가능
 public interface RunSomthing {
