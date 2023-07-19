@@ -29,10 +29,10 @@ public class App2 {
 
 
         //Collection의 기본 메서드 2. stream
-        long k = name.stream().map(String::toUpperCase)
+        long l = name.stream().map(String::toUpperCase)
                 .filter(s -> s.startsWith("L"))
                 .count();
-        System.out.println(k);
+        System.out.println(l);
 
         //Comparator 기본 메서드 1. reversed
         name.sort(String::compareToIgnoreCase); //문자순으로 순정렬
