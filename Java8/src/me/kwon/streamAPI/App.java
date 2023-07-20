@@ -34,7 +34,8 @@ public class App {
         int[] arr = {90,27,43,88,3};
         Arrays.stream(arr)
                 .filter(i -> i > 10)
-                .sorted()
+                .boxed()
+                .sorted(Comparator.reverseOrder())
                 .forEach(System.out::println);
     }
 }
