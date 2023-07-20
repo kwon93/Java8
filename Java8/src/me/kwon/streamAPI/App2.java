@@ -81,6 +81,6 @@ public class App2 {
                 .collect(Collectors.toList());
         spring.forEach(System.out::println);
 
-
+        System.out.println("//");
     }
 }
