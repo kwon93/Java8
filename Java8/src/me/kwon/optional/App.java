@@ -16,8 +16,7 @@ public class App {
         springClasses.add(new OnlineClass(5,"rest api development", false));
 
         OnlineClass2 springBoot = new OnlineClass2(1, "spring boot", true);
-        Duration studyDuration = springBoot.getProgress().getStudyDuration();
-        System.out.println(studyDuration);
+
 
     }
 }
