@@ -45,7 +45,18 @@ public class App2 {
         Optional<OnlineClass2> filterOptional = spring.filter(oc -> oc.getId() > 10); // 옵셔널에 필터걸기
         System.out.println("filterOptional = " + filterOptional);
         System.out.println(filterOptional.isPresent());
-         
+
+        Optional<String> title = spring.map(OnlineClass2::getTitle); 
+        System.out.println("title = " + title);
+
+        //return type이 Optional인경우 map으로 변환시 복잡해진다..
+        Optional<Optional<Progress>> progress = spring.map(OnlineClass2::getProgress);
+        Optional<Progress> progress1 = progress.orElseThrow();
+
+
+        //그래서 flatMap으로 한번 껍질을 까준다. 훨씬 간단해짐.
+        Optional<Progress> progress3 = spring.flatMap(OnlineClass2::getProgress);
+
 
 
     }
